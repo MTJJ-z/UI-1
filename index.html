@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>巴蜀文物非遗潮玩盲盒</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-dragon"></i>
+                <span>巴蜀潮玩</span>
+            </div>
+            <nav class="main-nav">
+                <a href="#" class="nav-link active"><i class="fas fa-home"></i> 首页</a>
+                <a href="#diy" class="nav-link"><i class="fas fa-palette"></i> DIY盲盒</a>
+                <a href="#shop" class="nav-link"><i class="fas fa-shopping-bag"></i> 商城</a>
+                <a href="#culture" class="nav-link"><i class="fas fa-landmark"></i> 文化</a>
+            </nav>
+            <div class="header-actions">
+                <button class="btn-icon"><i class="fas fa-search"></i></button>
+                <button class="btn-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">3</span></button>
+                <button class="btn-icon"><i class="fas fa-user"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主内容区域 -->
+    <main class="main-content">
+        <!-- 英雄区域 -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">探索巴蜀文物<br><span class="highlight">非遗潮玩盲盒</span></h1>
+                <p class="hero-subtitle">三星堆·川剧变脸·蜀绣·熊猫文创<br>亲手设计属于你的文物潮玩！</p>
+                <div class="hero-actions">
+                    <a href="#diy" class="btn-primary"><i class="fas fa-magic"></i> 立即DIY</a>
+                    <a href="#shop" class="btn-secondary"><i class="fas fa-gift"></i> 购买盲盒</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="blindbox-display">
+                    <div class="blindbox-3d" id="hero-blindbox">
+                        <!-- 3D盲盒将通过JS动态生成 -->
+                        <div class="blindbox-base"></div>
+                        <div class="blindbox-body"></div>
+                        <div class="blindbox-head"></div>
+                        <div class="blindbox-effect"></div>
+                    </div>
+                    <div class="blindbox-label">限量版 · 三星堆青铜系列</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 盲盒系列展示 -->
+        <section class="series-section">
+            <h2 class="section-title">热门盲盒系列</h2>
+            <p class="section-subtitle">收藏独一无二的巴蜀文物潮玩</p>
+            
+            <div class="series-grid">
+                <div class="series-card">
+                    <div class="series-image">
+                        <img src="photo\三星堆\三星堆.jpg" alt="三星堆青铜系列" class="series-img" data-series="sanxingdui">
+                        <div class="series-badge">热门</div>
+                    </div>
+                    <div class="series-content">
+                        <h3>三星堆青铜系列</h3>
+                        <p>神秘青铜面具、太阳轮、神树，重现古蜀文明</p>
+                        <div class="series-stats">
+                            <span><i class="fas fa-star"></i> 4.9</span>
+                            <span><i class="fas fa-fire"></i> 2.4k收藏</span>
+                        </div>
+                        <button class="btn-series"><i class="fas fa-eye"></i> 预览系列</button>
+                    </div>
+                </div>
+                
+                <div class="series-card">
+                    <div class="series-image">
+                        <img src="photo\川剧变脸2.jpg" alt="川剧变脸系列" class="series-img" data-series="bianlian">
+                        <div class="series-badge">新品</div>
+                    </div>
+                    <div class="series-content">
+                        <h3>川剧变脸系列</h3>
+                        <p>传统脸谱艺术与现代潮玩结合，一盒多变</p>
+                        <div class="series-stats">
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                            <span><i class="fas fa-fire"></i> 1.8k收藏</span>
+                        </div>
+                        <button class="btn-series"><i class="fas fa-eye"></i> 预览系列</button>
+                    </div>
+                </div>
+                
+                <div class="series-card">
+                    <div class="series-image">
+                        <img src="photo\蜀绣2.png" alt="蜀绣非遗系列" class="series-img" data-series="shuxiu">
+                        <div class="series-badge">限定</div>
+                    </div>
+                    <div class="series-content">
+                        <h3>蜀绣非遗系列</h3>
+                        <p>精美刺绣图案，传统工艺与现代设计融合</p>
+                        <div class="series-stats">
+                            <span><i class="fas fa-star"></i> 4.7</span>
+                            <span><i class="fas fa-fire"></i> 1.5k收藏</span>
+                        </div>
+                        <button class="btn-series"><i class="fas fa-eye"></i> 预览系列</button>
+                    </div>
+                </div>
+                
+                <div class="series-card">
+                    <div class="series-image">
+                        <img src="photo\熊猫\熊猫3.jpg" alt="熊猫文创系列" class="series-img" data-series="panda">
+                        <div class="series-badge">萌系</div>
+                    </div>
+                    <div class="series-content">
+                        <h3>熊猫文创系列</h3>
+                        <p>国宝熊猫化身文物守护者，可爱与文化的结合</p>
+                        <div class="series-stats">
+                            <span><i class="fas fa-star"></i> 4.9</span>
+                            <span><i class="fas fa-fire"></i> 3.2k收藏</span>
+                        </div>
+                        <button class="btn-series"><i class="fas fa-eye"></i> 预览系列</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DIY盲盒区域 -->
+        <section class="diy-section" id="diy">
+            <div class="diy-header">
+                <h2 class="section-title">DIY你的专属盲盒</h2>
+                <p class="section-subtitle">像换装游戏一样自由搭配，创造独一无二的文物潮玩</p>
+            </div>
+            
+            <div class="diy-container">
+                <!-- 3D预览区域 -->
+                <div class="diy-preview">
+                    <div class="preview-header">
+                        <h3>3D预览</h3>
+                        <div class="preview-controls">
+                            <button class="btn-control" id="rotate-btn"><i class="fas fa-sync-alt"></i> 旋转</button>
+                            <button class="btn-control" id="reset-btn"><i class="fas fa-redo"></i> 重置</button>
+                            <button class="btn-control" id="save-btn"><i class="fas fa-save"></i> 保存</button>
+                        </div>
+                    </div>
+                    <div class="preview-area">
+                        <div class="blindbox-3d-container">
+                            <div class="blindbox-3d" id="diy-blindbox">
+                                <!-- 3D模型将通过JS动态构建 -->
+                                <div class="part base-part" data-part="base">
+                                    <div class="part-label">青铜底座</div>
+                                </div>
+                                <div class="part body-part" data-part="body">
+                                    <div class="part-label">神树身体</div>
+                                </div>
+                                <div class="part head-part" data-part="head">
+                                    <div class="part-label">黄金面具</div>
+                                </div>
+                                <div class="part effect-part" data-part="effect">
+                                    <div class="part-label">神秘光效</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-controls">
+                            <button class="view-btn active" data-view="front"><i class="fas fa-eye"></i> 正面</button>
+                            <button class="view-btn" data-view="side"><i class="fas fa-arrows-alt-h"></i> 侧面</button>
+                            <button class="view-btn" data-view="top"><i class="fas fa-arrows-alt-v"></i> 俯视</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 部件选择区域 -->
+                <div class="diy-parts">
+                    <div class="parts-header">
+                        <h3>部件选择</h3>
+                        <div class="parts-tabs">
+                            <button class="tab-btn active" data-tab="head"><i class="fas fa-crown"></i> 头部</button>
+                            <button class="tab-btn" data-tab="body"><i class="fas fa-tshirt"></i> 身体</button>
+                            <button class="tab-btn" data-tab="base"><i class="fas fa-th-large"></i> 底座</button>
+                            <button class="tab-btn" data-tab="effect"><i class="fas fa-magic"></i> 特效</button>
+                        </div>
+                    </div>
+                    
+                    <div class="parts-grid" id="parts-container">
+                        <!-- 部件将通过JS动态加载 -->
+                    </div>
+                    
+                    <!-- 颜色选择器 -->
+                    <div class="color-picker">
+                        <h4>配色方案</h4>
+                        <div class="color-grid">
+                            <div class="color-option active" style="background-color: #ec4899;" data-color="primary-pink"></div>
+                            <div class="color-option" style="background-color: #db2777;" data-color="dark-pink"></div>
+                            <div class="color-option" style="background-color: #f472b6;" data-color="light-pink"></div>
+                            <div class="color-option" style="background-color: #1f2937;" data-color="black"></div>
+                            <div class="color-option" style="background-color: #4b5563;" data-color="gray"></div>
+                            <div class="color-option" style="background-color: #fbbf24;" data-color="accent"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 文化特色展示 -->
+        <section class="culture-section" id="culture">
+            <h2 class="section-title">巴蜀文物文化</h2>
+            <p class="section-subtitle">探索每件潮玩背后的历史故事</p>
+            
+            <div class="culture-cards">
+                <div class="culture-card">
+                    <div class="culture-icon">
+                        <i class="fas fa-monument"></i>
+                    </div>
+                    <h3>三星堆文明</h3>
+                    <p>距今3000-5000年的古蜀文明，以神秘的青铜面具、太阳轮和神树闻名，展现了独特的祭祀文化和艺术成就。</p>
+                    <a href="#" class="culture-link">了解更多 <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="culture-card">
+                    <div class="culture-icon">
+                        <i class="fas fa-theater-masks"></i>
+                    </div>
+                    <h3>川剧变脸</h3>
+                    <p>四川传统戏曲绝活，表演者瞬间变换脸谱面具，体现角色情绪变化，是中国非物质文化遗产的代表。</p>
+                    <a href="#" class="culture-link">了解更多 <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="culture-card">
+                    <div class="culture-icon">
+                        <i class="fas fa-vest"></i>
+                    </div>
+                    <h3>蜀绣技艺</h3>
+                    <p>中国四大名绣之一，起源于川西平原，以细腻的针法、丰富的色彩和生动的图案著称，传承千年。</p>
+                    <a href="#" class="culture-link">了解更多 <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 盲盒商城 -->
+        <section class="shop-section" id="shop">
+            <h2 class="section-title">盲盒商城</h2>
+            <p class="section-subtitle">收藏稀有文物潮玩，体验开盒惊喜</p>
+            
+            <div class="shop-filters">
+                <button class="filter-btn active">全部系列</button>
+                <button class="filter-btn">三星堆</button>
+                <button class="filter-btn">川剧变脸</button>
+                <button class="filter-btn">蜀绣</button>
+                <button class="filter-btn">熊猫</button>
+                <button class="filter-btn">限定款</button>
+            </div>
+            
+            <div class="shop-grid">
+                <!-- 商品将通过JS动态加载 -->
+                <div class="shop-item">
+                    <div class="shop-image">
+                        <img src="photo\三星堆\2035697370770968576203825.jpg" alt="三星堆青铜面具" class="shop-img" data-product="sanxingdui-mask">
+                        <div class="shop-badge">热卖</div>
+                    </div>
+                    <div class="shop-content">
+                        <h4>三星堆青铜面具</h4>
+                        <div class="shop-price">¥89</div>
+                        <div class="shop-rating">
+                            ★★★★★
+                        </div>
+                        <button class="btn-shop" data-product-id="1">
+                            <i class="fas fa-shopping-cart"></i> 加入购物车
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="shop-item">
+                    <div class="shop-image">
+                        <img src="photo\脸谱.png" alt="川剧变脸套装" class="shop-img" data-product="bianlian-set">
+                        <div class="shop-badge">新品</div>
+                    </div>
+                    <div class="shop-content">
+                        <h4>川剧变脸套装</h4>
+                        <div class="shop-price">¥129</div>
+                        <div class="shop-rating">
+                            ★★★★☆
+                        </div>
+                        <button class="btn-shop" data-product-id="2">
+                            <i class="fas fa-shopping-cart"></i> 加入购物车
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="shop-item">
+                    <div class="shop-image">
+                        <img src="photo\熊猫\2035699721527365632204802.png" alt="蜀绣熊猫" class="shop-img" data-product="shuxiu-panda">
+                        <div class="shop-badge">限定</div>
+                    </div>
+                    <div class="shop-content">
+                        <h4>蜀绣熊猫</h4>
+                        <div class="shop-price">¥99</div>
+                        <div class="shop-rating">
+                            ★★★★☆
+                        </div>
+                        <button class="btn-shop" data-product-id="3">
+                            <i class="fas fa-shopping-cart"></i> 加入购物车
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="shop-item">
+                    <div class="shop-image">
+                        <img src="" alt="青铜神树" class="shop-img" data-product="sanxingdui-tree">
+                        <div class="shop-badge">典藏</div>
+                    </div>
+                    <div class="shop-content">
+                        <h4>青铜神树</h4>
+                        <div class="shop-price">¥159</div>
+                        <div class="shop-rating">
+                            ★★★★★
+                        </div>
+                        <button class="btn-shop" data-product-id="4">
+                            <i class="fas fa-shopping-cart"></i> 加入购物车
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="shop-item">
+                    <div class="shop-image">
+                        <img src="photo\脸谱.png" alt="变脸大师" class="shop-img" data-product="bianlian-master">
+                        <div class="shop-badge">新品</div>
+                    </div>
+                    <div class="shop-content">
+                        <h4>变脸大师</h4>
+                        <div class="shop-price">¥109</div>
+                        <div class="shop-rating">
+                            ★★★★☆
+                        </div>
+                        <button class="btn-shop" data-product-id="5">
+                            <i class="fas fa-shopping-cart"></i> 加入购物车
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="shop-item">
+                    <div class="shop-image">
+                        <img src="photo\IMG_9610.JPG" alt="刺绣凤凰" class="shop-img" data-product="shuxiu-phoenix">
+                        <div class="shop-badge">限量</div>
+                    </div>
+                    <div class="shop-content">
+                        <h4>都江石像</h4>
+                        <div class="shop-price">¥139</div>
+                        <div class="shop-rating">
+                            ★★★★☆
+                        </div>
+                        <button class="btn-shop" data-product-id="6">
+                            <i class="fas fa-shopping-cart"></i> 加入购物车
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="shop-actions">
+                <button class="btn-load-more"><i class="fas fa-sync-alt"></i> 加载更多盲盒</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- 底部导航 -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4><i class="fas fa-dragon"></i> 巴蜀潮玩</h4>
+                <p>将巴蜀文物非遗与现代潮玩结合，创造独特的文化体验。</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-weixin"></i></a>
+                    <a href="#"><i class="fab fa-weibo"></i></a>
+                    <a href="#"><i class="fab fa-douyin"></i></a>
+                    <a href="#"><i class="fab fa-xiaohongshu"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>快速链接</h4>
+                <a href="#">首页</a>
+                <a href="#diy">DIY盲盒</a>
+                <a href="#shop">盲盒商城</a>
+                <a href="#culture">文化故事</a>
+            </div>
+            
+            <div class="footer-section">
+                <h4>支持</h4>
+                <a href="#">常见问题</a>
+                <a href="#">购买指南</a>
+                <a href="#">售后服务</a>
+                <a href="#">联系我们</a>
+            </div>
+            
+            <div class="footer-section">
+                <h4>关注我们</h4>
+                <p>获取最新盲盒发布和活动信息</p>
+                <div class="newsletter">
+                    <input type="email" placeholder="输入您的邮箱">
+                    <button class="btn-subscribe">订阅</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 巴蜀文物非遗潮玩盲盒. 保留所有权利. | 设计灵感来自泡泡玛特</p>
+        </div>
+    </footer>
+
+    <!-- 移动端底部导航 -->
+    <div class="mobile-nav">
+        <a href="#" class="mobile-nav-item active">
+            <i class="fas fa-home"></i>
+            <span>首页</span>
+        </a>
+        <a href="#diy" class="mobile-nav-item">
+            <i class="fas fa-palette"></i>
+            <span>DIY</span>
+        </a>
+        <a href="#shop" class="mobile-nav-item">
+            <i class="fas fa-shopping-bag"></i>
+            <span>商城</span>
+        </a>
+        <a href="#culture" class="mobile-nav-item">
+            <i class="fas fa-landmark"></i>
+            <span>文化</span>
+        </a>
+        <a href="#" class="mobile-nav-item">
+            <i class="fas fa-user"></i>
+            <span>我的</span>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
